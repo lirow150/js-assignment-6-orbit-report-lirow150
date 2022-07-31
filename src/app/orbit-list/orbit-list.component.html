@@ -17,8 +17,7 @@
     <!-- TODO 2b: use *ngFor to display satellite data in the table -->
     <tr *ngFor="let list of satellites">
         <td>{{list.name}}</td>
-        <td>{{list.type}}</td>
-        <!-- <td [class.warning] = "list.shouldShowWarning()">{{list.type}}</td>  -->
+        <!-- <td>{{list.type}}</td> -->  <td [class.warning] = "list.shouldShowWarning()">{{list.type}}</td> 
         <td>{{list.operational}}</td>
         <td>{{list.orbitType}}</td>
         <td>{{list.launchDate}}</td>
